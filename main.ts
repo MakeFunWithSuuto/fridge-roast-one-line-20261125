@@ -4,7 +4,7 @@ import { dirname } from "node:path";
 const OUTPUT_PATH = "/output/entry.txt";
 
 const ROAST =
-  'My smart fridge mistook a moldy lemon for an avocado and pinged me that it\'s "perfectly ripe for toast."';
+  "My smart fridge shut off all night for a 2GB firmware update; patch notes: \"Added support for room-temperature milk.\"";
 
 mkdirSync(dirname(OUTPUT_PATH), { recursive: true });
 writeFileSync(OUTPUT_PATH, `${ROAST}\n`, "utf8");
